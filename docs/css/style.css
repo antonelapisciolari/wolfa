@@ -53,6 +53,11 @@ h2, .h2 {
 h3, .h3 {
   font-size: 40px;
 }
+@media (max-width: 991px) {
+  h3, .h3 {
+    font-size: 30px;
+  }
+}
 
 h4, .h4 {
   font-size: 22px;
@@ -134,6 +139,7 @@ h6, .h6 {
   color: #fff;
   margin-bottom: 20px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 .btn-contact:active {
   background: #fec889 !important;
@@ -471,6 +477,10 @@ textarea.form-control {
   }
 }
 .hero-area h2 {
+  position: relative;
+  z-index: 2;
+}
+.hero-area h5 {
   position: relative;
   z-index: 2;
 }

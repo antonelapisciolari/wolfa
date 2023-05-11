@@ -41,7 +41,10 @@ h2, .h2{
 }
 
 h3, .h3{
-  font-size: 40px;
+  font-size: 40px;  
+  @include desktop {
+    font-size: 30px;
+  }
 }
 
 h4, .h4{

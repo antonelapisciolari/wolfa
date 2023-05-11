@@ -79,6 +79,7 @@
   color: $white;
   margin-bottom: 20px;
   margin-left: 20px;
+  margin-top: 20px;
   &:active {
     background: lighten($color: $thid-color, $amount: 10) !important;
   }
