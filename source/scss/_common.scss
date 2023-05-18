@@ -64,7 +64,11 @@ a:hover {
 .slick-slide {
   outline: 0;
 }
-
+.contact {
+  &-title {
+    font-family: $secondary-font;
+  }
+}
 .section {
   padding-top: 80px;
   padding-bottom: 80px;

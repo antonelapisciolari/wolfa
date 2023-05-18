@@ -231,6 +231,10 @@ a:hover {
   outline: 0;
 }
 
+.contact-title {
+  font-family: "Playfair Display", serif;
+}
+
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -702,7 +706,7 @@ textarea.form-control {
 /* /testimonial */
 /* footer */
 .footer-section {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .section-on-footer {
