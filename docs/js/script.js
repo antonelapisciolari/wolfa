@@ -162,3 +162,32 @@
 
 
 })(jQuery);
+
+// Get all the nav items
+const navItems = document.querySelectorAll('.nav-item');
+
+// Iterate over each nav item
+navItems.forEach(navItem => {
+  // Add a press event listener to each nav item
+  navItem.addEventListener('click', () => {
+    // Toggle the 'open' class on the clicked nav item
+    navItem.classList.toggle('open');
+  });
+
+  // Add a press event listener to the document
+  document.addEventListener('click', (event) => {
+    // Check if the clicked element is inside the nav item or the nav dropdown
+    const isNavItemClick = navItem.contains(event.target);
+    const isNavDropdownClick = navItem.querySelector('.nav-dropdown').contains(event.target);
+
+    // Close the dropdown if the clicked element is outside the nav item and nav dropdown
+    if (!isNavItemClick && !isNavDropdownClick) {
+      navItem.classList.remove('open');
+    }
+  });
+
+  // Add a press event listener for touch devices
+  navItem.addEventListener('touchstart', () => {
+    navItem.classList.remove('open');
+  });
+});
