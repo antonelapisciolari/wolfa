@@ -56,8 +56,10 @@
 
 .nav-item:hover .nav-dropdown {
   display: block;
-  @include desktop {
-     display: contents;
+}
+@media (max-width: 767px) {
+  .nav-item:hover .nav-dropdown {
+    display: contents; /* Display the dropdown as contents on mobile devices */
   }
 }
 .nav-dropdown li a:hover {

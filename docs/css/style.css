@@ -502,12 +502,12 @@ textarea.form-control {
 .nav-item:hover .nav-dropdown {
   display: block;
 }
-@media (max-width: 991px) {
+
+@media (max-width: 767px) {
   .nav-item:hover .nav-dropdown {
-    display: contents;
+    display: contents; /* Display the dropdown as contents on mobile devices */
   }
 }
-
 .nav-dropdown li a:hover {
   background-color: #542cb7;
 }
