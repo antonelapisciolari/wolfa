@@ -196,6 +196,11 @@ ul {
   margin: 0px;
 }
 
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
 img {
   vertical-align: middle;
   border: 0;
@@ -466,8 +471,44 @@ textarea.form-control {
   font-weight: bold;
 }
 
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 0;
+  z-index: 1;
+}
+
+.nav-dropdown li {
+  margin-top: 5px;
+}
+
+.nav-dropdown li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-item:hover .nav-dropdown {
+  display: block;
+}
+
+.nav-dropdown li a:hover {
+  background-color: #542cb7;
+}
+
+.nav-item:hover .nav-dropdown {
+  display: block;
 }
 
 .hero-area {
