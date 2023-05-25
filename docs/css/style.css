@@ -196,11 +196,6 @@ ul {
   margin: 0px;
 }
 
-ul li {
-  display: inline-block;
-  position: relative;
-}
-
 img {
   vertical-align: middle;
   border: 0;
@@ -485,6 +480,7 @@ textarea.form-control {
   position: absolute;
   min-width: 160px;
   padding: 0;
+  background-color: #41228e;
   z-index: 1;
 }
 
@@ -509,7 +505,7 @@ textarea.form-control {
   }
 }
 .nav-dropdown li a:hover {
-  background-color: #542cb7;
+  background-color: #41228e;
 }
 
 .hero-area {
