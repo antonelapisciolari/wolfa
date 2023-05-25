@@ -502,13 +502,14 @@ textarea.form-control {
 .nav-item:hover .nav-dropdown {
   display: block;
 }
+@media (max-width: 991px) {
+  .nav-item:hover .nav-dropdown {
+    display: contents;
+  }
+}
 
 .nav-dropdown li a:hover {
   background-color: #542cb7;
-}
-
-.nav-item:hover .nav-dropdown {
-  display: block;
 }
 
 .hero-area {

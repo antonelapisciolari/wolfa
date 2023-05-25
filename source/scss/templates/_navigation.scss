@@ -56,11 +56,10 @@
 
 .nav-item:hover .nav-dropdown {
   display: block;
+  @include desktop {
+     display: contents;
+  }
 }
 .nav-dropdown li a:hover {
   background-color: #542cb7;
-}
-
-.nav-item:hover .nav-dropdown {
-  display: block;
 }
