@@ -244,12 +244,6 @@ a:hover {
   font-family: "Playfair Display", serif;
 }
 
-.bg-cover {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 /* overlay */
 .overlay {
   position: relative;
